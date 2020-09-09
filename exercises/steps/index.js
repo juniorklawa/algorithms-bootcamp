@@ -17,6 +17,19 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  let a = "";
+
+  for (let i = 0; i < n; i++) {
+    a += " ";
+  }
+
+  const formattedA = a.split("");
+
+  for (let i = 0; i < n; i++) {
+    formattedA[i] = "#";
+    console.log(formattedA.join(""));
+  }
+}
 
 module.exports = steps;
